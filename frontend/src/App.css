@@ -1,0 +1,205 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Stile moderno e accattivante per la dashboard agricola */
+body {
+  background: linear-gradient(120deg, #e0ffe0 0%, #e3f6fd 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+.dashboard-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #1976d233;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  position: relative;
+  border: 3px solid #2e7d32; /* verde scuro */
+}
+.logout-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background: #1976d2; /* blu */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #388e3c; /* verde */
+}
+.carbon-box {
+  background: #fffde7; /* giallo chiaro */
+  border-left: 8px solid #fbc02d; /* giallo */
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  color: #f9a825; /* giallo scuro */
+}
+.sensor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #0001;
+}
+.sensor-table th, .sensor-table td {
+  padding: 0.7rem 0.5rem;
+  text-align: center;
+  color: #222;
+  font-size: 1.05rem;
+}
+.sensor-table th {
+  background: #2e7d32; /* verde scuro */
+  color: #fff;
+  font-weight: 600;
+}
+.sensor-table tr:nth-child(even) {
+  background: #e3f6fd; /* blu chiaro */
+}
+.sensor-table tr:nth-child(odd) {
+  background: #fffde7; /* giallo chiaro */
+}
+.sensor-table tr:hover {
+  background: #b3e5fc; /* blu più acceso */
+}
+.suggestion-list {
+  background: #f1f8e9;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px #0001;
+  color: #33691e;
+}
+.suggestion-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.alert {
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+.alert-success {
+  background: #c8e6c9;
+  color: #256029;
+  border: 1px solid #81c784;
+}
+.alert-danger {
+  background: #ffcdd2;
+  color: #b71c1c;
+  border: 1px solid #e57373;
+}
+.loader {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #26a69a;
+  margin-top: 4rem;
+}
+form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  margin: 3rem auto;
+  max-width: 350px;
+}
+form h2 {
+  color: #26a69a;
+  margin-bottom: 1.5rem;
+}
+form input {
+  border: 2px solid #fbc02d; /* giallo */
+  border-radius: 6px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+form input:focus {
+  border: 2.5px solid #1976d2; /* blu */
+  outline: none;
+}
+form button[type="submit"] {
+  background: #1976d2; /* blu */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button[type="submit"]:hover {
+  background: #388e3c; /* verde */
+}
+form button[type="button"] {
+  background: #fbc02d; /* giallo */
+  color: #2e7d32; /* verde scuro */
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s;
+}
+form button[type="button"]:hover {
+  background: #1976d2; /* blu */
+  color: #fff;
+}
