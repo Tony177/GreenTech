@@ -11,6 +11,8 @@ import {
 } from "recharts";
 import Chatbox from './Chatbox';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://localhost:8000';
+
 const params = [
   { key: "salinity", label: "Salinità del suolo (dS/m)", color: "#1976d2" }, // blu
   { key: "ph", label: "pH del suolo", color: "#fbc02d" }, // giallo
@@ -49,7 +51,7 @@ function Dashboard({ refresh, onLogout, CarbonForm }) {
   useEffect(() => {
     const token = localStorage.getItem("token");
     setLoading(true);
-    fetch("https://localhost:8000/dashboard", {
+    fetch(`${BACKEND_URL}/dashboard`, {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => res.json())

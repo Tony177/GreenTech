@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://localhost:8000';
+
 export default function Chatbox({ sensors, footprint, token, answer, setAnswer, loading, setLoading, error, setError }) {
   const [input, setInput] = useState("");
 
@@ -8,7 +10,7 @@ export default function Chatbox({ sensors, footprint, token, answer, setAnswer, 
     setError("");
     setAnswer("");
     try {
-      const res = await fetch("https://localhost:8000/chat_suggestion", {
+      const res = await fetch(`${BACKEND_URL}/chat_suggestion`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

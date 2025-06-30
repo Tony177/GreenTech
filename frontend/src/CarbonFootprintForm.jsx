@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://localhost:8000';
 
 export default function CarbonFootprintForm({ token }) {
   const [grano, setGrano] = useState(() => localStorage.getItem('cf_grano') || 0);
@@ -26,7 +27,7 @@ export default function CarbonFootprintForm({ token }) {
     setError("");
     setResult(null);
     try {
-      const res = await fetch("https://localhost:8000/carbon_footprint", {
+      const res = await fetch(`${BACKEND_URL}/carbon_footprint`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
