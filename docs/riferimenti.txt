@@ -1,0 +1,5 @@
+https://www.climfoot-project.eu/it/practical-case-italy
+https://www.isprambiente.gov.it/en/publications/reports/italian-emission-inventory-1990-2014.-informative-inventory-report-2016
+https://data-explorer.oecd.org/vis?lc=en&df[ds]=DisseminateFinalDMZ&df[id]=DSD_AGR%40DF_OUTLOOK_2024_2033&df[ag]=OECD.TAD.ATM&df[vs]=1.1&av=true&dq=EU%2BOECD.A.CPC_0111...&pd=2010%2C2033&to[TIME_PERIOD]=false&vw=tb
+https://eplca.jrc.ec.europa.eu/EF-node/
+https://eplca.jrc.ec.europa.eu/globalLCA.html
